@@ -1,0 +1,221 @@
+@import "reset.scss";
+$fonts: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+body {
+  font-family: $fonts;
+}
+/* 12-COLUMN GRID DEFINITION WITH 2 SIZES*/
+@media (max-width: 960px) {
+  @for $i from 1 through 12 {
+    .col-md-#{$i} {
+      flex-basis: (100%/12) * $i !important;
+    }
+  }
+}
+
+@for $i from 1 through 12 {
+  .col-lg-#{$i} {
+    flex-basis: (100%/12) * $i;
+  }
+}
+a {
+  text-decoration: none;
+}
+
+/*GUTTERS*/
+@for $i from 0 through 7 {
+  .gut-#{$i} {
+    gap: $i * 10px;
+  }
+}
+
+/*MARGIN */
+@for $i from 0 through 7 {
+  .m-#{$i} {
+    margin: $i * 10px;
+  }
+}
+
+@for $i from 0 through 7 {
+  .mb-#{$i} {
+    margin-bottom: $i * 10px;
+  }
+}
+
+@for $i from 0 through 7 {
+  .mt-#{$i} {
+    margin-top: $i * 10px;
+  }
+}
+
+@for $i from 0 through 7 {
+  .mr-#{$i} {
+    margin-right: $i * 10px;
+  }
+}
+
+@for $i from 0 through 7 {
+  .ml-#{$i} {
+    margin-left: $i * 10px;
+  }
+}
+
+/*PADDING*/
+@for $i from 0 through 7 {
+  .pb-#{$i} {
+    padding-bottom: $i * 10px;
+  }
+}
+
+@for $i from 0 through 7 {
+  .pt-#{$i} {
+    padding-top: $i * 10px;
+  }
+}
+
+@for $i from 0 through 7 {
+  .pr-#{$i} {
+    padding-right: $i * 10px;
+  }
+}
+
+@for $i from 0 through 7 {
+  .pl-#{$i} {
+    padding-left: $i * 10px;
+  }
+}
+
+@for $i from 0 through 7 {
+  .p-#{$i} {
+    padding: $i * 10px;
+  }
+}
+
+/*DISPLAY */
+.d-none {
+  display: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-inlineblock {
+  display: inline-block;
+}
+
+.d-inline {
+  display: inline;
+}
+
+/*POSITION */
+
+.posrel {
+  position: relative;
+}
+
+.posabs {
+  position: absolute;
+}
+
+.posfix {
+  position: fixed;
+}
+
+.center {
+  margin: auto;
+}
+
+/* TEXT */
+.center-text {
+  text-align: center;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-bolder {
+  font-weight: bolder;
+}
+
+.text-thin {
+  font-weight: lighter;
+}
+
+/* BUTTONS*/
+.btn {
+  border-radius: 0.2em;
+  box-shadow: 0 0.05em 0.25em 0 rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  padding: 1rem 3.5rem;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+}
+
+/* FLEXBOX */
+.row {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+.justify-center {
+  justify-content: center;
+}
+.align-end {
+  align-items: flex-end;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-wrap-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-wrap-nowrap {
+  flex-wrap: nowrap;
+}
+
+/*WIDHT*/
+.w-100 {
+  width: 100%;
+}
